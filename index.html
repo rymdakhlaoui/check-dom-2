@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>COLOR CHANGE</title>
+        <link href="./output.css" rel="stylesheet" />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script
+          src="https://kit.fontawesome.com/529b8a145f.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+      <body>
+        <div
+          class="conatainer relative mx-auto h-screen px-4 bg-gradient-to-r from-green-300 to-yellow-300 flex flex-col justify-center items-center"
+        >
+          <h1 class="absolute top-0 text-4xl font-medium items-center">
+            Color Changer
+          </h1>
+
+          <button 
+            id="change-color-btn"
+            class="absolute top-10 my-4 inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
+          >
+            <span
+              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+            >
+              Change Color
+            </span>
+          </button>
+
+          <div
+            id="color-box"
+            class="w-4/5 h-4/6 translate-y-4 box-border  p-4 rounded-2xl"
+          ></div>
+        </div>
+        <!--*******************SCRIPT*****************************-->
+
+        <script src="/tailwind.config.js"></script>
+        <script src="./main.js"></script>
+      </body>
+    </html>
+  </head>
+</html>
